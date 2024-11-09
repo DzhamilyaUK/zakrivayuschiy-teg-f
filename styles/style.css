@@ -83,15 +83,7 @@
   pointer-events: none;
 }
 
-@keyframes arrow {
-  from {
-    left: -20px;
-  }
 
-  to {
-    left: -16px;
-  }
-}
 
 .theme-menu__button:disabled::before {
   content: '▶';
@@ -211,9 +203,10 @@
   height: 39px;
 }
 
+
 .card__like-button {
   max-height: 39px;
-  }
+}
 
 .card__icon-button {
   background-color: transparent;
@@ -236,6 +229,10 @@
 
 }  */
 
+.sparks {
+  opacity: 0;
+  fill: var(--heart-color);
+}
 
 .container__like-button {
   position: relative;
@@ -323,14 +320,12 @@
   padding-bottom: 30px;
 }
 
+/* кнопка Ок*/
 .button_close {
-  background-color: transparent;
-  mix-blend-mode: difference;
-  border: 2px solid var(--button-text-color);
+  background-color: var(--background-color);
+  border: var(--border);
   min-height: 38px;
 }
-
-
 
 
 .footer {
@@ -341,6 +336,8 @@
 
 .floppy {
   z-index: 1;
+  mix-blend-mode: difference;
+  color: var(--button-text-color);
   inline-size: 21px;
   block-size: 21px;
 }
@@ -348,12 +345,14 @@
 .floppy_mod{
   position: relative;
   z-index: 10;
+  mix-blend-mode: difference;
   color: var(--accent-color);
   flex-shrink: 0;
   inline-size: 39px;
   block-size: 39px;
 }
 
+/* кнопка Сохранить на память*/
 .button_memory-saver {
   display: flex;
   align-items: center;
@@ -373,6 +372,18 @@
   outline: none;
 }
 
+
+
+
+
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 2px 2px 0 var(--accent-color);
+}
 
 
 /* FILTERS  */
@@ -406,3 +417,5 @@
   filter: saturate(122);
   filter: grayscale(0.5);
 }
+
+

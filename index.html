@@ -313,7 +313,7 @@
 
       </ul>
       <section class="footer">
-        <button class="button_memory-saver" type="button"
+        <button class="button_memory-saver container__button-text" type="button"
          onclick="window['dialog__save-message'].showModal();"
          aria-controls="dialog__save-message">
           <svg viewBox="0 0 40 40" class="floppy">
@@ -331,7 +331,9 @@
           </svg>
           <p class="button__text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button class="button__text button_close" type="submit" onclick="window['dialog__save-message'].close();">oк</button>
+        <button class="button_close container__button-text" type="submit" onclick="window['dialog__save-message'].close();">
+          <p class="button__text">oк</p>
+        </button>
        </dialog>
       </section>
     </main>      
