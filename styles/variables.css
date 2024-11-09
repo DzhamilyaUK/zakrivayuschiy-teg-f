@@ -17,3 +17,12 @@
   
     --border: 2px solid var(--accent-color);
   }
+
+  @media (width <= 375px) {
+    .button_memory-saver {
+    gap: 5px;
+    min-height: 85px;
+    min-width: 310px;
+    flex-direction: column; 
+    }
+  }
