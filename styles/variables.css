@@ -1,21 +1,4 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-.page {
-    margin-inline: auto;
-    margin-block: 102px;
-    color: var(--accent-color);
-    font-family: var(--main-font), sans-serif;
-    font-weight: var(--main-font-weight);
-    font-size: 1.125rem;
-    background-color: var(--background-color);
-    background-image: var(--gradient);
-    background-size: cover;
-    background-attachment: fixed;
-    min-inline-size: 320px;
-    min-block-size: 100dvb;
-    inline-size: 100%;
-    max-inline-size: clamp(375px, 100%, 700px);
-  }
-  
   :root {
     --main-font: "Inter-Variable";
     --accent-font: "PressStart2P-Regular";
