@@ -58,11 +58,12 @@
 }
 
 .theme-menu__list {
+  padding-left: 17px;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  row-gap: 0.778em;
-  margin-block: 25px;
+  row-gap: 0.59em;
+  margin-block: 23px;
 }
 
 .theme-menu__button {
@@ -136,7 +137,7 @@
   font-variation-settings: 'wght' var(--main-font-weight), var(--main-font);
   text-align: left;
   font-size: 18px;
-  padding: 10px 5px;
+  padding: 5px 10px;
 }
 
 .container__card-image {
@@ -296,8 +297,8 @@
   display: grid;
   background-color: var(--background-color);
   border: var(--border);
-  width: 340px;
-  padding: 30px 38px;
+  width: 350px;
+  padding: 30px 30px;
   position: fixed;
   inset: 0;
   transition: opacity 0.3s ease-in-out;
@@ -318,6 +319,9 @@
   gap: 25px;
   justify-content: space-between;
   padding-bottom: 30px;
+  line-height: 1.5;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 /* кнопка Ок*/
@@ -338,8 +342,8 @@
   z-index: 1;
   mix-blend-mode: difference;
   color: var(--button-text-color);
-  inline-size: 21px;
-  block-size: 21px;
+  inline-size: 23px;
+  block-size: 23px;
 }
 
 .floppy_mod{
@@ -356,10 +360,10 @@
 .button_memory-saver {
   display: flex;
   align-items: center;
-  gap: 10px;
-  justify-content: space-around;
+  gap: 5px;
+  justify-content: center;
   min-height: 55px;
-  min-width: 335px;
+  min-width: 340px;
   background-color: var(--background-color);
   border: var(--border);
 }
