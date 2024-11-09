@@ -43,14 +43,13 @@
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   font-family: var(--accent-font), sans-serif;
   font-size: 0.778em;
-  font-variation-settings: 'wght' var(--accent-font);
   text-transform: uppercase;
   background-color: var(--background-color);
 }
 
 .header__title {
   margin-block: 136px 20px;
-  font-weight: inherit;
+  font-variation-settings: 'wght' var(--accent-font-weight), var(--accent-font);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
@@ -127,47 +126,47 @@
 
 
 .main__list {
-display: flex;
-flex-direction: column;
-gap: 52px;
-}
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  }
 
 .main__list-item {
-background-color: var(--background-color);
-border: var(--border);
-}
+  background-color: var(--background-color);
+  border: var(--border);
+  }
 
 .list-item__card {
 
 }
 
 .card-title {
-font-family: var(--main-font), sans-serif;
-text-align: left;
-font-size: 18px;
-padding: 10px 5px;
+  font-variation-settings: 'wght' var(--main-font-weight), var(--main-font);
+  text-align: left;
+  font-size: 18px;
+  padding: 10px 5px;
 }
 
 .container__card-image {
-position: relative;
-}
+  position: relative;
+  }
 
 .label__card-image {
-font-family: var(--accent-font), sans-serif;
-font-weight: 400;
-z-index: 1;
-mix-blend-mode: hard-light;
-line-height: 14px;
-opacity: 0.5;
-position:absolute;
-top: 25px;
-right: 25px;
-text-shadow:
-  -1px 0 var(--background-color), 
-  0 1px var(--background-color), 
-  1px 0 var(--background-color), 
-  0 -1px var(--background-color);
-}
+  font-family: var(--accent-font), sans-serif;
+  font-weight: 400;
+  z-index: 1;
+  mix-blend-mode: hard-light;
+  line-height: 14px;
+  opacity: 0.5;
+  position:absolute;
+  top: 25px;
+  right: 25px;
+  text-shadow:
+    -1px 0 var(--background-color), 
+    0 1px var(--background-color), 
+    1px 0 var(--background-color), 
+    0 -1px var(--background-color);
+  }
 
 
 @supports((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
@@ -202,20 +201,25 @@ font-size: 18px;
 line-height: 21px;
 }
 
-/*для svg-иконки анимированного сердца 
+ 
 .like-icon {
-
+display: flex;
+align-self: center;
 }
 
-/*для кнопки Like рядом с иконкой
-.card__like-button {
+.heart {
+  height: 39px;
+}
 
-}*/
+.card__like-button {
+max-height: 39px;
+}
 
 .card__icon-button {
 background-color: transparent;
 box-shadow: none;
 border: transparent;
+max-height: 39px;
 }
 
 .card__icon-button:focus {
