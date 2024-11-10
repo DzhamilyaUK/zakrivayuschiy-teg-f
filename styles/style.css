@@ -142,7 +142,7 @@
 
 .container__card-image {
   position: relative;
-  }
+}
 
 .label__card-image {
   font-family: var(--accent-font), sans-serif;
@@ -156,11 +156,11 @@
   top: 25px;
   right: 25px;
   text-shadow:
-    -1px 0 var(--background-color), 
-    0 1px var(--background-color), 
-    1px 0 var(--background-color), 
-    0 -1px var(--background-color);
-  }
+  -1px 0 var(--background-color), 
+  0 1px var(--background-color), 
+  1px 0 var(--background-color), 
+  0 -1px var(--background-color);
+}
 
 
 @supports((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
@@ -224,7 +224,7 @@
   border: transparent;
   max-height: 39px;
   transition: border 0.3s ease;
-  }
+}
 
 .card__icon-button:focus {
   outline: none;
@@ -375,23 +375,6 @@
   min-width: 340px;
   background-color: var(--background-color);
   border: var(--border);
-}
-
-.button_memory-saver:focus-visible {
-  box-shadow: 2px 2px 0 var(--accent-color);
-}
-
-.button_memory-saver:focus {
-  outline: none;
-}
-
-
-.button:focus {
-  outline: none;
-}
-
-.button:focus-visible {
-  box-shadow: 2px 2px 0 var(--accent-color);
 }
 
 
