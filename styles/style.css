@@ -49,7 +49,7 @@
 
 .header__title {
   margin-block: 136px 20px;
-  font-variation-settings: 'wght' var(--accent-font-weight), var(--accent-font);
+  font-weight:var(--font-weight-bold);
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
@@ -83,7 +83,6 @@
   opacity: 0.6;
   pointer-events: none;
 }
-
 
 
 .theme-menu__button:disabled::before {
@@ -121,7 +120,7 @@
 .main__list {
   display: flex;
   flex-direction: column;
-  gap: 52px;
+  gap: 50px;
   }
 
 .main__list-item {
@@ -134,10 +133,11 @@
 }
 
 .card-title {
-  font-variation-settings: 'wght' var(--main-font-weight), var(--main-font);
+  font-variation-settings: 'wght' var(--font-weight-bold);
+  font-family: var(--main-font), sans-serif;
   text-align: left;
   font-size: 18px;
-  padding: 5px 10px;
+  padding: 7px 10px;
 }
 
 .container__card-image {
@@ -147,6 +147,7 @@
 .label__card-image {
   font-family: var(--accent-font), sans-serif;
   font-weight: 400;
+  font-size: 14px;
   z-index: 1;
   mix-blend-mode: hard-light;
   line-height: 14px;
@@ -184,12 +185,12 @@
 .container__card-text {
   display: grid;
   padding: 25px;
-  row-gap: 27px;
+  row-gap: 28px;
 }
 
 .card-text {
-  font-family: var(--main-font);
-  font-weight: var(--main-font-weight);
+  font-variation-settings: 'wght' var(--main-font-weight);
+  font-family: var(--main-font), sans-serif;
   font-size: 18px;
   line-height: 21px;
 }
@@ -198,6 +199,11 @@
 .like-icon {
   display: flex;
   align-self: center;
+  align-self: center;
+  justify-self: center;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .heart {
@@ -210,6 +216,9 @@
 }
 
 .card__icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
   box-shadow: none;
   border: transparent;
@@ -335,7 +344,7 @@
 .footer {
   display: flex;
   justify-content: center;
-  padding-top: 52px;
+  padding-top: 50px;
 }
 
 .floppy {
@@ -360,7 +369,7 @@
 .button_memory-saver {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
   justify-content: center;
   min-height: 55px;
   min-width: 340px;

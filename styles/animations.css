@@ -44,9 +44,6 @@
   }
 
 
-  
-
-
 .like-icon .main-body {
     fill: transparent;
     transition: fill 0.3s linear;
@@ -81,25 +78,6 @@ transition: fill 0.1s  linear;
     transition: fill 0.3s linear;
 }
 
-@keyframes heartbeat {
-    0% {
-      scale: 1;
-    }
-    100% {
-      scale: 1.25;
-    }
-  }
-  
-  @keyframes sparks {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-}
-  
 .like-icon.is-liked .contour {
     fill: var(--heart-color);
     transition: fill 0.3s 0.06s linear;

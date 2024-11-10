@@ -20,10 +20,11 @@
 }
 
 :root.theme-light {
-    --main-font: "Inter-Variable";
+    --main-font: 'Inter-Variable';
     --accent-font: 'PressStart2P';
     --main-font-weight: 400;
     --accent-font-weight: 700;
+    --font-weight-bold: 700;
   
     --accent-color: #000;
     --background-color: #fff;
@@ -44,6 +45,7 @@
     :root {
         --main-font-weight: 465;
         --accent-font-weight: 785;
+        --font-weight-bold: 785;
 
         --accent-color: #00CC14;
         --button-text-color:#00CC14;
