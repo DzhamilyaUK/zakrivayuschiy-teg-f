@@ -351,8 +351,8 @@
   z-index: 1;
   mix-blend-mode: difference;
   color: var(--button-text-color);
-  inline-size: 23px;
-  block-size: 23px;
+  inline-size: 28px;
+  block-size: 28px;
 }
 
 .floppy_mod{
