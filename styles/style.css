@@ -435,4 +435,19 @@
   min-width: 310px;
   flex-direction: column; 
   }
+
+  .header__title {
+  margin-block: 120px 20px;
+  }
+  .card-title{
+  padding: 5px 10px;
+  }
+
+  .theme-menu__list {
+    margin-block: 25px;
+    padding-left: 20px;
+  }
+
+
 }
+
